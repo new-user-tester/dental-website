@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SmileBright Dental Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary">SmileBright</span> Dental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="contact.html#appointment" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Comprehensive Dental Care</h2>
+                <p class="lead">We offer a wide range of dental services to meet all your oral health needs</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-teeth"></i>
+                            </div>
+                            <h3 class="card-title">General Dentistry</h3>
+                            <p class="card-text">Our general dentistry services focus on maintaining your oral health through regular check-ups, cleanings, and preventive care.</p>
+                            <a href="#general" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <h3 class="card-title">Cosmetic Dentistry</h3>
+                            <p class="card-text">Enhance your smile with our cosmetic dentistry services, including teeth whitening, veneers, and smile makeovers.</p>
+                            <a href="#cosmetic" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3 class="card-title">Restorative Dentistry</h3>
+                            <p class="card-text">Restore your dental function and appearance with our restorative services, including fillings, crowns, bridges, and dental implants.</p>
+                            <a href="#restorative" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <h3 class="card-title">Pediatric Dentistry</h3>
+                            <p class="card-text">We provide gentle, child-friendly dental care to help your children develop healthy oral habits from an early age.</p>
+                            <a href="#pediatric" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-teeth-open"></i>
+                            </div>
+                            <h3 class="card-title">Orthodontics</h3>
+                            <p class="card-text">Achieve a straighter smile with our orthodontic treatments, including traditional braces and clear aligners.</p>
+                            <a href="#orthodontics" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-detail-card h-100">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-procedures"></i>
+                            </div>
+                            <h3 class="card-title">Emergency Dental Care</h3>
+                            <p class="card-text">We provide prompt care for dental emergencies to relieve pain and prevent further complications.</p>
+                            <a href="#emergency" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Dentistry Section -->
+    <section id="general" class="service-detail-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1770&auto=format&fit=crop" 
+                         alt="General Dentistry" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>General Dentistry</h2>
+                    <p class="lead">Maintaining your oral health for a lifetime of smiles</p>
+                    <p>Our general dentistry services form the foundation of good oral health. Regular check-ups and professional cleanings help prevent dental problems before they start, saving you time, money, and discomfort in the long run.</p>
+                    <h5 class="mt-4">Our General Dentistry Services Include:</h5>
+                    <ul class="service-list">
+                        <li>
+                            <h6>Comprehensive Dental Exams</h6>
+                            <p>Regular examinations allow us to detect and address dental issues early, before they become more serious problems.</p>
+                        </li>
+                        <li>
+                            <h6>Professional Teeth Cleaning</h6>
+                            <p>Our hygienists remove plaque and tartar buildup that regular brushing and flossing can't reach, helping to prevent cavities and gum disease.</p>
+                        </li>
+                        <li>
+                            <h6>Digital X-rays</h6>
+                            <p>We use low-radiation digital X-rays to detect issues that aren't visible during a visual examination.</p>
+                        </li>
+                        <li>
+                            <h6>Oral Cancer Screenings</h6>
+                            <p>Early detection is key to successful treatment. We include oral cancer screenings as part of your regular check-up.</p>
+                        </li>
+                        <li>
+                            <h6>Dental Sealants</h6>
+                            <p>Protective coatings that help prevent cavities in the grooves of your teeth where food and bacteria can get trapped.</p>
+                        </li>
+                        <li>
+                            <h6>Fluoride Treatments</h6>
+                            <p>Strengthen tooth enamel and help prevent decay with professional fluoride applications.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cosmetic Dentistry Section -->
+    <section id="cosmetic" class="service-detail-section py-5">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1581585095872-cb9a35d1e5ad?q=80&w=1770&auto=format&fit=crop" 
+                         alt="Cosmetic Dentistry" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Cosmetic Dentistry</h2>
+                    <p class="lead">Transform your smile and boost your confidence</p>
+                    <p>Our cosmetic dentistry services can help you achieve the beautiful, confident smile you've always wanted. Dr. Johnson combines artistic skill with advanced techniques to create natural-looking results that enhance your appearance while maintaining the health and function of your teeth.</p>
+                    <h5 class="mt-4">Our Cosmetic Dentistry Services Include:</h5>
+                    <ul class="service-list">
+                        <li>
+                            <h6>Teeth Whitening</h6>
+                            <p>Professional-grade whitening treatments that can lighten your teeth by several shades, removing years of stains and discoloration.</p>
+                        </li>
+                        <li>
+                            <h6>Porcelain Veneers</h6>
+                            <p>Thin shells of porcelain that are bonded to the front of your teeth to correct issues like chips, gaps, stains, or misalignments.</p>
+                        </li>
+                        <li>
+                            <h6>Dental Bonding</h6>
+                            <p>A tooth-colored resin material that can repair chips, cracks, and gaps, improving the appearance of your smile in just one visit.</p>
+                        </li>
+                        <li>
+                            <h6>Smile Makeovers</h6>
+                            <p>Comprehensive treatment plans that combine multiple cosmetic procedures to completely transform your smile.</p>
+                        </li>
+                        <li>
+                            <h6>Gum Contouring</h6>
+                            <p>Reshape and recontour your gumline to create a more balanced, aesthetically pleasing smile.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restorative Dentistry Section -->
+    <section id="restorative" class="service-detail-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?q=80&w=1887&auto=format&fit=crop" 
+                         alt="Restorative Dentistry" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Restorative Dentistry</h2>
+                    <p class="lead">Restore your smile's function and beauty</p>
+                    <p>When teeth are damaged or missing, our restorative dentistry services can help restore both the function and appearance of your smile. We use high-quality materials and advanced techniques to create restorations that look natural and last for years.</p>
+                    <h5 class="mt-4">Our Restorative Dentistry Services Include:</h5>
+                    <ul class="service-list">
+                        <li>
+                            <h6>Tooth-Colored Fillings</h6>
+                            <p>Natural-looking composite fillings that blend seamlessly with your teeth while effectively treating cavities.</p>
+                        </li>
+                        <li>
+                            <h6>Dental Crowns</h6>
+                            <p>Custom-made caps that cover damaged or weakened teeth, restoring their strength, function, and appearance.</p>
+                        </li>
+                        <li>
+                            <h6>Dental Bridges</h6>
+                            <p>Fixed prosthetic devices that "bridge" the gap created by one or more missing teeth, restoring your smile and bite.</p>
+                        </li>
+                        <li>
+                            <h6>Dental Implants</h6>
+                            <p>The gold standard for tooth replacement, dental implants provide a permanent solution that looks, feels, and functions like natural teeth.</p>
+                        </li>
+                        <li>
+                            <h6>Dentures and Partial Dentures</h6>
+                            <p>Removable appliances that replace multiple missing teeth, restoring your ability to eat, speak, and smile with confidence.</p>
+                        </li>
+                        <li>
+                            <h6>Root Canal Therapy</h6>
+                            <p>Treatment to save severely infected or damaged teeth, relieving pain and preserving your natural tooth structure.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Services -->
+    <section class="other-services-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div id="pediatric" class="other-service-item mb-5">
+                        <h3>Pediatric Dentistry</h3>
+                        <p>We make dental visits fun and non-threatening for children, helping them develop positive associations with dental care from an early age. Our pediatric services include:</p>
+                        <ul>
+                            <li>Kid-friendly dental check-ups and cleanings</li>
+                            <li>Dental sealants and fluoride treatments</li>
+                            <li>Early orthodontic assessments</li>
+                            <li>Education on proper brushing and flossing techniques</li>
+                            <li>Treatment for cavities and other dental issues</li>
+                        </ul>
+                    </div>
+                    <div id="orthodontics" class="other-service-item">
+                        <h3>Orthodontics</h3>
+                        <p>Straighten your teeth and improve your bite with our orthodontic treatments. We offer:</p>
+                        <ul>
+                            <li>Traditional metal braces</li>
+                            <li>Clear ceramic braces</li>
+                            <li>Invisible aligners</li>
+                            <li>Retainers and post-treatment care</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="emergency" class="other-service-item mb-5">
+                        <h3>Emergency Dental Care</h3>
+                        <p>Dental emergencies can happen at any time. We provide prompt care for:</p>
+                        <ul>
+                            <li>Severe toothaches</li>
+                            <li>Chipped or broken teeth</li>
+                            <li>Knocked-out teeth</li>
+                            <li>Lost fillings or crowns</li>
+                            <li>Dental abscess or infection</li>
+                            <li>Injuries to the mouth or jaw</li>
+                        </ul>
+                        <p class="mt-3"><strong>If you're experiencing a dental emergency, call us right away at (555) 123-4567.</strong></p>
+                    </div>
+                    <div class="other-service-item">
+                        <h3>Additional Services</h3>
+                        <ul>
+                            <li>TMJ/TMD diagnosis and treatment</li>
+                            <li>Sleep apnea and snoring solutions</li>
+                            <li>Gum disease treatment</li>
+                            <li>Custom mouthguards and night guards</li>
+                            <li>Dental implant restoration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white text-center">
+        <div class="container">
+            <h2>Ready to Schedule Your Visit?</h2>
+            <p class="lead mb-4">Experience our comprehensive dental care services</p>
+            <a href="contact.html#appointment" class="btn btn-lg btn-light">Book Your Appointment Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>SmileBright Dental</h5>
+                    <p>Providing quality dental care with a gentle touch. Your smile is our priority.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Office Hours</h5>
+                    <ul class="list-unstyled office-hours">
+                        <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                        <li><span>Saturday:</span> 9:00 AM - 2:00 PM</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                    <p class="mt-3">
+                        <strong>Emergency Service Available</strong><br>
+                        Call: (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 SmileBright Dental. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#">Privacy Policy</a> | 
+                        <a href="#">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,660 @@
+/* 
+* SmileBright Dental Clinic - Custom CSS Styles
+* This stylesheet contains all custom styles for the dentist website
+*/
+
+/* Global Styles */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #34a853;
+    --accent-color: #4285f4;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --gray-color: #6c757d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --body-font: 'Roboto', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #4a4a4a;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: 76px; /* Adjust for fixed navbar */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* Remove tap highlight on mobile */
+    touch-action: manipulation; /* Improve touch handling */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Make all interactive elements have sufficient touch target size */
+.btn, 
+button, 
+input[type="submit"], 
+input[type="button"],
+.nav-link,
+.navbar-toggler,
+select {
+    min-height: 44px; /* Minimum touch target height */
+    min-width: 44px; /* Minimum touch target width for icons/small buttons */
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5fcc;
+    border-color: #0b5fcc;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    padding: 12px 15px; /* Increased padding for better touch targets */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar-toggler {
+    padding: 10px 12px; /* Increased padding */
+    border: none; /* Remove border for cleaner look */
+}
+
+/* Page Header */
+.page-header {
+    background-color: #f5f7fa;
+    padding: 60px 0 30px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0 80px;
+    background-color: #f5f7fa;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.hero-img {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-detail-card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    height: 100%;
+}
+
+.service-detail-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-section {
+    padding: 80px 0;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    margin-bottom: 20px;
+}
+
+.service-list h6 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.other-service-item {
+    margin-bottom: 30px;
+}
+
+.other-service-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.other-service-item ul {
+    padding-left: 20px;
+}
+
+.other-service-item ul li {
+    margin-bottom: 8px;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+}
+
+.doctor-img, .team-img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+    width: 44px; /* Increased for better touch target */
+    height: 44px; /* Increased for better touch target */
+    border-radius: 50%;
+    background-color: rgba(26, 115, 232, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.team-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.check-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 35px; /* Increased for better touch target */
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.check-list li:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: var(--primary-color);
+    font-size: 1.2rem; /* Larger icon */
+}
+
+.philosophy-image-container img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem; /* Larger stars */
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #bbb;
+}
+
+/* Contact Section */
+.contact-preview-section {
+    padding: 80px 0;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+#map, .map-embed {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.min-height-300 {
+    min-height: 300px;
+}
+
+.contact-info-section {
+    padding: 80px 0;
+}
+
+.contact-details .contact-item {
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-details .contact-item:hover {
+    background-color: rgba(26, 115, 232, 0.05);
+}
+
+.contact-details h5 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; /* Increased for better touch target */
+    height: 44px; /* Increased for better touch target */
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 12px; /* Increased spacing between links */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.appointment-form-container {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Form elements */
+.form-control, 
+.form-select {
+    padding: 12px;
+    border-radius: 4px;
+    height: auto; /* Override Bootstrap's fixed height */
+    font-size: 16px; /* Prevent iOS zoom on focus */
+}
+
+/* Increase checkbox and radio size */
+input[type="checkbox"], 
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.form-check-label {
+    padding-top: 2px; /* Align with larger checkbox */
+}
+
+/* Add spacing between form elements */
+.form-label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* FAQ Section */
+.accordion-button {
+    padding: 16px; /* Increased padding */
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(26, 115, 232, 0.05);
+    color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(26, 115, 232, 0.1);
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+    padding: 16px; /* Increased padding */
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 80px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    padding: 80px 0 50px;
+}
+
+.footer h5 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links li {
+    margin-bottom: 15px; /* Increased for better touch targets */
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 0; /* Add padding for larger touch target */
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.office-hours li {
+    margin-bottom: 12px; /* Increased spacing */
+    padding: 3px 0; /* Add padding */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.office-hours span {
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+}
+
+.footer hr {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 80px 0 60px;
+        text-align: center;
+    }
+    
+    .hero-section .btn {
+        margin-bottom: 10px;
+        display: block; /* Make buttons stack */
+        width: 100%; /* Full width buttons */
+        max-width: 300px; /* But not too wide */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-img {
+        margin-top: 30px;
+    }
+    
+    .navbar-collapse {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+    }
+    
+    /* Increase spacing in mobile navigation */
+    .navbar-nav .nav-item {
+        margin-bottom: 5px;
+    }
+    
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 12px 15px;
+        border-radius: 4px;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(26, 115, 232, 0.05);
+    }
+    
+    /* Adjust form layout */
+    .form-control, 
+    .form-select, 
+    .btn {
+        margin-bottom: 15px;
+    }
+    
+    /* Add more spacing between sections */
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Make cards take full width */
+    .service-card, 
+    .testimonial-card, 
+    .team-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* Further adjustments for mobile */
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .service-card, .team-card, .testimonial-card {
+        margin-bottom: 20px;
+    }
+    
+    .about-section, .services-section, .testimonials-section, .contact-preview-section {
+        padding: 60px 0;
+    }
+    
+    .page-header {
+        padding: 50px 0 25px;
+        margin-bottom: 30px;
+    }
+    
+    #map, .map-embed {
+        height: 300px;
+    }
+    
+    /* Adjust headings for mobile */
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Increase touch target spacing */
+    .check-list li, 
+    .service-list li, 
+    .other-service-item ul li {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    /* Optimize footer for mobile */
+    .footer {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+    
+    .footer-links, 
+    .office-hours {
+        margin-bottom: 30px;
+    }
+    
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
+    
+    /* Fix spacing issues */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Improve form usability on mobile */
+    input, select, textarea, button {
+        font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Adjustments for tablets */
+    .hero-section .btn {
+        display: inline-block;
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    .hero-section .btn:last-child {
+        margin-right: 0;
+    }
+    
+    /* Tablet grid adjustments */
+    .row .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    /* Keep two columns for tablet service cards */
+    .service-card, 
+    .team-card, 
+    .testimonial-card {
+        height: 100%;
+    }
+} 
